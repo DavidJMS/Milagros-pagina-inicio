@@ -1,0 +1,134 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mila</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <link rel="icon" type="image/png" href="{% static "media/img/icono.png" %}" />
+  <!-- Place favicon.ico in the root directory -->
+<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css"%}">
+<link rel="stylesheet" type="text/css" href="{% static "css/estilos.css"%}">
+
+</head>
+
+<body background="">
+<!-- Logo y bienvenida -->
+<div class="container">
+  <h1>Milagros Ortiz</h1><br>
+  <h2 class="text-center">Bienvenidos humanos y etraterrestres</h2>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <img style="width: 360px;height: 360px; align-items: center;" src="{% static "media/img/icono.png" %}">
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+</div> 
+<!-- Final del logo y de la binvenida-->
+<!--Inicio de la presentacion--> 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div background="{% static "media/img/1.png" %}" style="background-size:100%;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</div>  
+<!--Final de la presentacion--> 
+<!--Carousel-->
+<div class="row" id="a">
+  <div class="col-md-12">   
+  <!--Carousel-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li  data-target="#myCarousel" data-slide-to="3"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="img-fluid" alt="Responsive image" style="width: 100%; height:620px;" src="{% static "media/img/2.png" %}">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" alt="Responsive image" style="width: 100%; height:620px;" src="{% static "media/img/4.png" %}">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" alt="Responsive image" style="width: 100%; height:620px;" src="{% static "media/img/6.png" %}">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" alt="Responsive image" style="width: 100%; height:620px;" src="{% static "media/img/7.png" %}">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+    </div>
+  </div>
+</div>
+<!--Final del carousel -->
+<!-- Contactame-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container">
+        <h2>Puesdes contáctar conmigo por medio de estos medios:</h2>
+        <div class="row">
+    <div class="col-md-3">
+      <div class="container"> 
+        <img style="width: 100%;"  src="{%static "media/img/instagram.jpg "%}">
+      </div>
+      <h2 class="text-center" style="color: white;">Instagram</h2>
+      <button style="width: 100%; background: #041BDB;" type="button" class="btn btn-dark"><a style="width:100%;color:white;" href="https://www.instagram.com/viad.monagas/">Continuar</a></button>
+    </div>
+    <div class="col-md-3">
+      <div class="container"> 
+          <img style="width: 100%;"  src="{%static "media/img/Whatssap.jpg "%}">
+      </div>
+      <h2 class="text-center" style="color: white;">Whatssap</h2>
+      <button style="width: 100%;background:#0469DB;" type="button" class="btn btn-dark"><a style="width: 100%;color: white;" href="https://api.whatsapp.com/send?phone=+584265809173&text=Buenas estoy interesado e sus productos">Continuar</a></button>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+          <img style="width: 100%;" src="{%static "media/img/Gmail.jpg "%}" style="width: 225px; height: 225px;">
+      </div>
+      <h2 class="text-center" style="color: white;">Gmail</h2>
+      <button style="width: 100%;background:#FC7104;" type="button" class="btn btn-dark" onclick="Gmail();">Continuar</button>
+    </div>
+    <div class="col-md-3">
+      <div class="container"> 
+          <img style="width: 100%;" src="{%static "media/img/telefono.png "%}">
+      </div>    
+      <h2 class="text-center" style="color: white;">Telefonos</h2>
+      <button style="width: 100%;background:#22DB04;" type="button" class="btn btn-dark" onclick="Telefonos();">Continuar</button>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="{% static "js/jquery.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+</html>
